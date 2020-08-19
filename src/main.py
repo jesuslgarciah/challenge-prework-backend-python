@@ -15,7 +15,6 @@ def generate_password():
       
 
 def randomChar(cont):
-    symbols = ''.join(SYMBOLS[0:len(SYMBOLS)])
     if(cont > 3):
       x = random.randint(0,3)
     else:
@@ -27,7 +26,7 @@ def randomChar(cont):
     elif(x==2):
       return random.choice(string.digits)
     elif(x==3):
-      return random.choice(symbols)
+      return random.choice(SYMBOLS)
 
 
 def validate(password):
